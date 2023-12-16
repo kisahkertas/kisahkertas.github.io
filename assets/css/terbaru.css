@@ -1,0 +1,279 @@
+:root{
+    --color-background: #eeeeee;
+    --color-border: #222222;
+    --color-font: #222222;
+    --color-kartu : #ffffff;
+    --color-nav: #ffffff;
+}
+@font-face{
+  font-family: 'Anton';
+  src: url('../fonts/Anton/Anton-Regular.ttf');
+}
+*, html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    color: var(--color-font);
+}
+body{
+    width: 100%;
+    background-color: var(--color-background);
+}
+
+/* &----- navigasi -----*/
+nav{
+    padding: 0 5%;
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+nav > a{
+    gap: 5px;
+    width: auto;
+    height: 36px;
+    display: flex;
+}
+nav > a img{
+    width: 27px;
+    object-fit: cover;
+    z-index: 6;
+}
+nav > a p{
+    /* padding: 20px 0 0 0; */
+    display: flex;
+    flex-direction: column;
+}
+nav > ul{
+    display: flex;
+}
+nav > ul li{
+    margin: 0 0 0 10px;
+}
+nav > ul li:nth-last-of-type(3),
+nav > ul li:nth-last-of-type(2),
+nav > ul li:nth-last-of-type(1){
+    background-color: var(--color-kartu);
+    z-index: 6;
+}
+nav > ul li a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--color-font);
+    border-radius: 5px;
+    transition: .5s;
+}
+nav > ul li a:hover{
+    background-color: var(--color-background);
+}
+
+/* & Hamburger */
+.navigasi{
+    transition: .5s;
+    padding: 20px;
+    width: 40%;
+    top: 60px;
+    left: 100%;
+    border-radius: 5px;
+    border: var(--color-border) solid 1px;
+    position: absolute;
+    background-color: var(--color-nav);
+}
+.navigasi ul{
+    display: flex;
+    flex-direction: column;
+}
+.navigasi ul li{
+    margin: 5px;
+    border-radius: 5px;
+    border: var(--color-border) solid 1px;    
+}
+.navigasi ul li a{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    color: var(--color-font);
+    border-radius: 5px;
+    transition: .5s;
+}
+.navigasi ul li a:hover{
+    background-color: var(--color-background);
+}
+.navigasi_on{
+    left: 60%;
+}
+/* & user */
+.user{
+    transition: .5s;
+    padding: 20px;
+    width: 40%;
+    top: 60px;
+    left: 100%;
+    border-radius: 5px;
+    border: var(--color-border) solid 1px;
+    position: absolute;
+    background-color: var(--color-nav);
+}
+.content_user1{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: 115px;
+}
+.content_user1 img{
+    width: 115px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.content_user2 h3{
+    overflow: hidden;
+    text-align: center;
+}
+.content_user2 p{
+    font-size: 12px;
+    overflow: hidden;
+}
+.content_user2 a{
+    margin-top: 10px;
+    background-color: var(--color-background);
+    border: var(--color-border) 1px solid;
+    border-radius: 5px;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+.user_on{
+    left: 60%;
+}
+
+/* & search */
+nav > ul li:nth-last-child(4){
+    display: flex;
+    justify-content: center;
+}
+.cari{
+    transition: .5s;
+    width: 1px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.cari_on{
+    border: var(--color-border) solid 1px;
+    width: 100px;
+}
+
+/* &----- buku ----- */
+.container_buku{
+    padding: 80px 5% 40px;
+}
+.content_buku{
+    padding: 0 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.kartu{
+    padding: 5px;
+    margin: 0 0 10px;
+    height: 200px;
+    flex: 0 0 110px;
+    border-radius: 5px;
+    background-color: var(--color-kartu);
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.kartu:hover{
+    transition: .5s;
+    border: var(--color-border) solid 1px;
+}
+.kartu img{
+    height: 106px;
+    width: 100%;
+    object-fit: contain;
+}
+.kartu h4{
+    max-height: 36px;
+    overflow: hidden;
+}
+.kartu p, .kartu h5{
+    font-size: 12px;
+    text-align: end;
+}
+
+/* &----- footer ----- */
+.container_foter{
+    padding: 30px 0 0;
+    background-color: var(--color-font);
+    color: var(--color-background);
+}
+.container_foter h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+.container_foter > span{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.container_foter > span p{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 50;
+    text-align: center;
+    max-width: 300px;
+    overflow: wrap;
+    color: #ffffff;
+}
+.container_foter > span a{
+    margin: 5px;
+    transition: .5s;
+}
+.container_foter > span a:hover{
+    transform: translateY(-5px);
+}
+.container_foter > span a img{
+    width: 35px;
+}
+.container_foter div{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.container_foter div > p{
+    max-width: 350px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 50;
+    background-color: black;
+    color: #ffffff;
+}
+.container_foter div > p span{
+    opacity: .5;
+    color: #ffffff;
+}

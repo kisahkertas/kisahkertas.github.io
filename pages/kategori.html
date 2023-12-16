@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/kategori.css">
+    <link rel="icon" href="../assets/img/logokisahkertas.png" type="image/png">
+    <title>Kisah Kertas | Terbaru</title>
+</head>
+<body>
+    <!-- &----- navigasi ----- -->
+    <nav>
+        <a href="home.html"><img src="../assets/img/logokisahkertas.png" alt="Logo nak"><p>Kisah<span>Kertas</span></p></a>
+        <ul>
+            <li><input type="text" id="search" class="cari"></li>
+            <li><a onclick="cariOnOff()"><img src="../assets/img/search.svg"></a></li>
+            <li><a onclick="userOnOff()"><img src="../assets/img/user.svg"></a></li>
+            <li><a onclick="navigasiOnOff()"><img src="../assets/img/bars.svg"></a></li>
+        </ul>
+        <div class="navigasi">
+            <ul>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="terbaru.html">Terbaru</a></li>
+                <li><a href="terlaris.html">Terlaris</a></li>
+            </ul>
+        </div>
+        <div class="user">
+            <div class="content_user1">
+                <img src="../assets/img/pp-user.jpg">
+            </div>
+            <div class="content_user2">
+                <h3>Wilson</h3>
+                <p>ID5869</p>
+                <p>bill@gmail.com</p>
+                <p>0866-4543-5542</p>
+                <p>Jl. Alamat, No 65</p>
+                <span>
+                    <a href="../index.html">Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- &----- Content ----- -->
+    <div class="container_kategori">
+        <div class="bar_left">
+            <div class="kategori_menu">
+                <a href="#buku_sekolah" onclick="kategoriMenuOnOf()">Buku Sekolah</a>
+                <a href="#novel" onclick="kategoriMenuOnOf()">Novel</a>
+                <a href="#romance" onclick="kategoriMenuOnOf()">Romance</a>
+                <a href="#dongeng" onclick="kategoriMenuOnOf()">Dongeng</a>
+            </div>
+            <div class="kategori_toggel">
+                <a onclick="kategoriMenuOnOf()">K</a>
+            </div>
+        </div>
+        <div class="content_right">
+            <div id="buku_sekolah" class="content_id">
+                <h2>Buku Sekolah</h2>
+                <div class="container">
+                    <a href="buku_matematika.html" class="kartu">
+                        <img src="../assets/img/matematika.jpg" draggable="false">
+                        <h4>Buku Paket Matematika</h4>
+                        <p>Eksa S. M.Pd</p>
+                        <h5>Rp. 83.000</h5>
+                    </a>
+                </div>
+            </div>
+            <div id="novel" class="content_id">
+                <h2>Novel</h2>
+                <div class="container">
+                    <a href="buku_paper_town.html" class="kartu">
+                        <img src="../assets/img/buku_ paper towns.jpg" draggable="false">
+                        <h4>Paper Town</h4>
+                        <p>James Gunz</p>
+                        <h5>Rp. 110.000</h5>
+                    </a>
+                    <a href="buku_the_kite.html" class="kartu">
+                        <img src="../assets/img/buku_ the kite.jpg" draggable="false">
+                        <h4>The Kite</h4>
+                        <p>Alexsis Criss</p>
+                        <h5>Rp. 240.000</h5>
+                    </a>
+                    <a href="buku_aroma_karsa.html" class="kartu">
+                        <img src="../assets/img/buku_aroma_karsa.jpg" draggable="false">
+                        <h4>Aroma Karsa</h4>
+                        <p>Dee Lestari</p>
+                        <h5>Rp. 240.000</h5>
+                    </a>
+                </div>
+            </div>
+            <div id="romance" class="content_id">
+                <h2>Romance</h2>
+                <div class="container">
+                    <a href="buku_dilan_1990.html" class="kartu">
+                        <img src="../assets/img/buku_dilan_1990.jpg" draggable="false">
+                        <h4>Dilan 1990</h4>
+                        <p>Pidi Baqhi</p>
+                        <h5>Rp. 250.000</h5>
+                    </a>
+                    <a href="buku_acika_1995.html" class="kartu">
+                        <img src="../assets/img/buku_acika_1995.jpeg" draggable="false">
+                        <h4>Acika 1995</h4>
+                        <p>Pidi Baqih</p>
+                        <h5>Rp. 360.000</h5>
+                    </a>
+                    <a href="buku_aroma_karsa.html" class="kartu">
+                        <img src="../assets/img/buku_aroma_karsa.jpg" draggable="false">
+                        <h4>Aroma Karsa</h4>
+                        <p>Dee Lestari</p>
+                        <h5>Rp. 240.000</h5>
+                    </a>
+                    <a href="buku_bad_romance.html" class="kartu">
+                        <img src="../assets/img/buku_bad_romance.jpg" draggable="false">
+                        <h4>Bad Romance</h4>
+                        <p>Rangga Satriya</p>
+                        <h5>Rp. 120.000</h5>
+                    </a>
+                    <a href="buku_critical_eleven.html" class="kartu">
+                        <img src="../assets/img/buku_critical_eleven.jpg" draggable="false">
+                        <h4>Critical Eleven</h4>
+                        <p>Ika Natassa</p>
+                        <h5>Rp. 210.000</h5>
+                    </a>
+                    <a href="buku_the_kite.html" class="kartu">
+                        <img src="../assets/img/buku_ the kite.jpg" draggable="false">
+                        <h4>The Kite</h4>
+                        <p>Alexsis Criss</p>
+                        <h5>Rp. 240.000</h5>
+                    </a>
+                </div>
+            </div>
+            <div id="dongeng" class="content_id">
+                <h2>Dongeng</h2>
+                <div class="container">
+                    <a href="buku_dongeng_anak_dunia.html" class="kartu">
+                        <img src="../assets/img/Dongeng-Anak-Dunia.jpg" draggable="false">
+                        <h4>Buku Cerita Dongeng Anak Dunia</h4>
+                        <p>Soesanto R.</p>
+                        <h5>Rp. 34.000</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- &----- footer ----- -->
+    <footer>
+        <div class="container_foter">
+            <h3>MaspeM Enterprises</h3>
+            <span>
+                <p>Desember ini melelahkan, Aku hanyalah Manusia brengsek yang ga bisa berenang mungkin itu sebabnya aku tegelam dalam senyum mu, Yaa semoga kau temukan yang lebih baik dariku.</p>
+            </span>
+            <span>
+                <a href=""><img src="../assets/img/sosial-ig.png"></a>
+                <a href=""><img src="../assets/img/sosial-in.png"></a>
+                <a href=""><img src="../assets/img/sosial-wa.png"></a>
+            </span>
+            <div>
+                <p>copyright &copy;2023 maspemEnterprises. designed by <span>MaspeM</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
